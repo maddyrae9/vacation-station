@@ -4,6 +4,7 @@
  AS A VACATIONER I want all my needs for food and rentals in one place, SO THAT I can optimize and be efficient with my vacation.
  
  # Description
+
 *This app allows vacation users to get all there food and rentals in one place.
 
 *Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
@@ -43,3 +44,12 @@ vacation-station-wireframe.png
 *Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
 *Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+# Who is Doing What
+Madison: HTML. CSS
+Alina: HTML. CSS, JS
+Milfred: HTML, CSS, JS, Willing
+to try
+James: HTML, GitHub, Willing
+to try
+Jean: HTML, CSS, JS, Backend
