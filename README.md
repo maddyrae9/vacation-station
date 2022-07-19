@@ -8,3 +8,12 @@
 -Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
 -It wil have a Registration page, Login in page, Home page, complete form page, Tracking page, 
 -Future Development: Cart page, Review page
+
+# Who is Doing What
+Madison: HTML. CSS
+Alina: HTML. CSS, JS
+Milfred: HTML, CSS, JS, Willing
+to try
+James: HTML, GitHub, Willing
+to try
+Jean: HTML, CSS, JS, Backend
