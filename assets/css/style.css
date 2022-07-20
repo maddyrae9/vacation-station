@@ -1,18 +1,17 @@
 /* apply styles to header */
 header {
-padding: 60px 20px;
-  background-image: linear-gradient(rgb(0, 16, 235), grey);
+  padding: 60px 20px;
+  background-image: url("../images/su-san-lee-g3PyXO4A0yc-unsplash.jpg");
 }
 header a {
   text-decoration: none;
-  color:black
+  color: white;
 }
 header nav {
-  float: right;
   margin: -30px 0;
 }
 header nav ul li {
-  display:inline
+  display: inline;
 }
 header nav ul li a {
   margin: 10 40px;
@@ -23,13 +22,14 @@ header nav ul li a {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: black;
+  color: white;
   margin: 0;
   display: inline;
 }
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color:darkturquoise;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: linear-gradient(beige, rgb(171, 118, 75));
 }
 section {
   border: black;
@@ -37,9 +37,13 @@ section {
   border-style: solid;
   margin-left: 60px;
   margin-right: 60px;
+  background-color: white;
+}
+.btn {
+  border-color: black;
 }
 .btn:hover {
-  background-image: linear-gradient(white, rgb(124, 0, 128));
+  background-image: linear-gradient(white, green);
 }
 footer {
   background: aliceblue;
@@ -48,7 +52,7 @@ footer {
 }
 footer h2 {
   display: inline;
-  color: #024e76;
+  /* color: #024e76; */
   font-size: 30px;
   margin: 0;
 }
@@ -58,5 +62,5 @@ footer div {
   text-align: right;
 }
 footer a {
-  color: #024e76;
+  /* color: #024e76; */
 }
