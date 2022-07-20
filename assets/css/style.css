@@ -1,0 +1,33 @@
+/* apply styles to header */
+header {
+  padding: 20px 35px;
+  background-color: aliceblue;
+}
+header a {
+  text-decoration: none;
+  color:black
+}
+header nav {
+  float: right;
+  margin: -30px 0;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  margin: 0;
+  display: inline;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:darkturquoise
+}
