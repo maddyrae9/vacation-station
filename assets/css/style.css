@@ -1,10 +1,7 @@
-  margin: 0;
-  padding: 0;
-}
 /* apply styles to header */
 header {
-  padding: 20px 35px;
-  background-color: aliceblue;
+padding: 60px 20px;
+  background-image: linear-gradient(rgb(0, 16, 235), grey);
 }
 header a {
   text-decoration: none;
@@ -15,10 +12,10 @@ header nav {
   margin: -30px 0;
 }
 header nav ul li {
-  display: inline;
+  display:inline
 }
 header nav ul li a {
-  margin: 0 30px;
+  margin: 10 40px;
   font-weight: bold;
   font-size: 20px;
   text-decoration: underline;
@@ -32,7 +29,13 @@ header h1 {
 }
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color:darkturquoise
+  background-color:darkturquoise;
+}
+section {
+  border: black;
+  border-style: solid;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 footer {
   background: aliceblue;
