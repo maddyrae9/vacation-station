@@ -33,9 +33,13 @@ body {
 }
 section {
   border: black;
+  text-align: center;
   border-style: solid;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.btn:hover {
+  background-image: linear-gradient(white, rgb(124, 0, 128));
 }
 footer {
   background: aliceblue;
