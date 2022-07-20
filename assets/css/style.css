@@ -26,6 +26,7 @@ header h1 {
   margin: 0;
   display: inline;
 }
+/* apply styles to the body */
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -45,6 +46,7 @@ section {
 .btn:hover {
   background-image: linear-gradient(white, green);
 }
+/* apply styles to the footer */
 footer {
   background: aliceblue;
   width: 100%;
@@ -52,7 +54,7 @@ footer {
 }
 footer h2 {
   display: inline;
-  /* color: #024e76; */
+  color: #024e76; 
   font-size: 30px;
   margin: 0;
 }
@@ -62,5 +64,5 @@ footer div {
   text-align: right;
 }
 footer a {
-  /* color: #024e76; */
+   color: #024e76; 
 }
