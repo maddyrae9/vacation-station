@@ -1,3 +1,7 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
 /* apply styles to header */
 header {
   padding: 20px 35px;
@@ -30,4 +34,23 @@ header h1 {
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color:darkturquoise
+}
+footer {
+  background: aliceblue;
+  width: 100%;
+  padding: 40px 35px;
+}
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+footer div {
+  float: right;
+  line-height: 1;
+  text-align: right;
+}
+footer a {
+  color: #024e76;
 }
