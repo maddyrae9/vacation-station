@@ -1,8 +1,9 @@
 // function to display shopping list as items are added
-
 var loginButtonEl = document.getElementById("login-btn");
 var homePageEl = document.getElementById("home-page");
 var shoppingListArr = [];
+
+var paymentPageEl = document.getElementById("checkout-page");
 
 // hide home page when button is clicked
 // create new list items
@@ -21,3 +22,8 @@ loginButtonEl.addEventListener("click", shoppingList);
 // card number
 // cvv and expiration in separate boxes
 // billing (zip code only?)
+
+function checkoutForm() {
+  paymentPageEl.classList.remove("hide");
+}
+paymentPageEl.addEventListener("click", checkoutForm);
