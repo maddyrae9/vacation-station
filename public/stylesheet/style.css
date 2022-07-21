@@ -1,7 +1,7 @@
 /* apply styles to header */
 header {
   padding: 60px 20px;
-  background-image: url("../images/su-san-lee-g3PyXO4A0yc-unsplash.jpg");
+  /* background-image: url("../images/su-san-lee-g3PyXO4A0yc-unsplash.jpg"); */
 }
 header a {
   text-decoration: none;
@@ -44,25 +44,33 @@ section {
   border-color: black;
 }
 .btn:hover {
-  background-image: linear-gradient(white, green);
+  background-image: linear-gradient(white, rgb(171, 118, 75));
 }
 /* apply styles to the footer */
 footer {
   background: aliceblue;
+  height: 80px;
   width: 100%;
-  padding: 40px 35px;
+  padding: 25px 35px;
+  position: absolute;
+  bottom: 0;
+  margin-top: -80px;
 }
 footer h2 {
   display: inline;
-  color: #024e76; 
+  color: #024e76;
   font-size: 30px;
   margin: 0;
 }
 footer div {
-  float: right;
+  float: center;
   line-height: 1;
-  text-align: right;
+  text-align: center;
 }
 footer a {
-   color: #024e76; 
+  color: #024e76;
+}
+
+.hide {
+  display: none;
 }
