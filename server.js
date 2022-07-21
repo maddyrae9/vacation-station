@@ -1,38 +1,31 @@
-// dependencies
-var express = require('express');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
-var exphbs = require('express-handlebars');
-var path = require('path');
-var favicon = require('serve-favicon');
-require('dotenv').config()
+const sequelize = require("./config/connection");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-var PORT = process.env.PORT || 8080;
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
-var app = express();
+app.use(session(sess));
 
+const helpers = require('./utils/helpers');
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+const hbs = exphbs.create({ helpers });
 
-app.use(express.static(__dirname + '/public'));
-
-app.use(methodOverride('__method'));
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-var routes = require('./controllers/routes.js');
-app.use("/", routes);
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-// app.get('/css', function (req, res){
-//     res.sendFile(path.join(__dirname, '/public/assets/css/appstyle.css'));
-  
-//   })
+app.use(require('./controllers/'));
 
-// Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
-    // Log (server-side) when our server has started
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
+});
