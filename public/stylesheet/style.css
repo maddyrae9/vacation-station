@@ -74,3 +74,8 @@ footer a {
 .hide {
   display: none;
 }
+
+.payment-form {
+  box-sizing: border-box;
+  border-color: black;
+}

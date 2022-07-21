@@ -107,15 +107,37 @@
     </div>
     <!-- shopping page stuff -->
     <div class="hide" id="checkout-page">
-      <h2>Payment</h2>
-      <label for="card-name">Name On Card</label>
-      <input
-        type="text"
-        id="card-name"
-        name="card-name"
-        placeholder="Name As Appears On Card"
-      />
-      <label form="card-num">Credit Card Number</label>
+      <form class="payment-form">
+        <h2>Payment</h2>
+        <label for="card-name">Full Name</label>
+        <input
+          type="text"
+          id="card-name"
+          name="card-name"
+          placeholder="Name On Card"
+        />
+        <label for="card-num">Credit Card Number</label>
+        <input
+          type="text"
+          id="card-num"
+          name="card-num"
+          placeholder="Credit Card Number"
+        />
+        <label for="card-cvv">CVV</label>
+        <input type="text" id="card-cvv" name="card-cvv" placeholder="CVV" />
+        <label for="exp-date">Expiration Date</label>
+        <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" />
+        <label for="bill-zip">Billing Zip Code</label>
+        <input
+          type="text"
+          id="bill-zip"
+          name="bill-zip"
+          placeholder="Zip/Postal Code"
+        />
+      </form>
+      <form>
+        <h3>Shopping Cart</h3>
+      </form>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

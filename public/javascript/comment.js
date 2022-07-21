@@ -4,6 +4,7 @@ var homePageEl = document.getElementById("home-page");
 var shoppingListArr = [];
 
 var paymentPageEl = document.getElementById("checkout-page");
+var createAccountButtonEl = document.getElementById("create-account-btn");
 
 // hide home page when button is clicked
 // create new list items
@@ -24,6 +25,7 @@ loginButtonEl.addEventListener("click", shoppingList);
 // billing (zip code only?)
 
 function checkoutForm() {
+  homePageEl.classList.add("hide");
   paymentPageEl.classList.remove("hide");
 }
-paymentPageEl.addEventListener("click", checkoutForm);
+createAccountButtonEl.addEventListener("click", checkoutForm);
