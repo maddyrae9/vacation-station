@@ -4,6 +4,7 @@ var homePageEl = document.getElementById("home-page");
 var shoppingListArr = [];
 
 var paymentPageEl = document.getElementById("checkout-page");
+paymentPageEl.classList.add("hide");
 var createAccountButtonEl = document.getElementById("create-account-btn");
 
 // hide home page when button is clicked
