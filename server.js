@@ -6,6 +6,8 @@ var exphbs = require('express-handlebars');
 var path = require('path');
 var favicon = require('serve-favicon');
 require('dotenv').config()
+const routes=require("./controllers")
+require('dotenv"=')
 
 var PORT = process.env.PORT || 8080;
 
@@ -35,4 +37,9 @@ app.use("/", routes);
 app.listen(PORT, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + PORT);
+  });
+
+  // turn on connection to database and server
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
   });
