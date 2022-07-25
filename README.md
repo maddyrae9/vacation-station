@@ -5,13 +5,13 @@
  
  # Description
 
-*This app allows vacation users to get all there food and rentals in one place.
+* This app allows vacation users to get all there food and rentals in one place.
 
-*Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
+* Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
 
-*It wil have a Registration page, Login in page, Home page, complete form page, Tracking page, 
+* It wil have a Registration page, Login in page, Home page, complete form page, Tracking page, 
 
-*Future Development: Cart page, Review page
+* Future Development: Cart page, Review page
 
 # WireFrame
 vacation-station-wireframe.png 
