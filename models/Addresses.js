@@ -1,4 +1,4 @@
-const Address = require("ipaddr.js");
+const Addresses = require("ipaddr.js");
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
