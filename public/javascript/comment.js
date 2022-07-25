@@ -25,7 +25,8 @@ loginButtonEl.addEventListener("click", shoppingList);
 // cvv and expiration in separate boxes
 // billing (zip code only?)
 
-function checkoutForm() {
+function checkoutForm(event) {
+  event.preventDefault();
   homePageEl.classList.add("hide");
   paymentPageEl.classList.remove("hide");
 }
