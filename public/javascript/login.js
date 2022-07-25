@@ -1,46 +1,47 @@
-//login 
-let searchForm = document.querySelector('.search-form');
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    cart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
-let cart = document.querySelector('.shopping-cart');
-document.querySelector('#cart-btn').onclick = () =>{
-    cart.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
-let loginForm = document.querySelector('.login-form');
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
-    searchForm.classList.remove('active');
-    cart.classList.remove('active');
-    navbar.classList.remove('active');
-}
-let navbar = document.querySelector('.navbar');
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    cart.classList.remove('active');
-    loginForm.classList.remove('active');
-}
-window.onscroll = () =>{
-    searchForm.classList.remove('active');
-    cart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
-let slides = document.querySelectorAll('.home .slides-container .slide');
-let index = 0;
-function next(){
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}
-function prev(){
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
+// Log in logic
+
+async function loginFormHandler(event) {
+
+    event.preventDefault();
+    console.log("botton clicked")
+  
+    const username = document.querySelector('#username-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
+  
+      if (username !== "" && password !== "") {
+  
+        if (username && password) {
+          const response = await fetch('/api/users/login', {
+            method: 'post',
+            body: JSON.stringify({
+              username,
+              password
+            }),
+            headers: { 'Content-Type': 'application/json' }
+          });
+  
+          if (response.ok) {
+              // go back to homepage after loggin in
+            document.location.replace('/');
+          } else {
+            // alert(response.statusText);
+            alert("Username/password combination does not exist, please try again or sign up instead.");
+          }
+        }
+      } else {
+  
+        if (username === "" && password === "") {
+          alert("Please enter a username and password, then submit")
+        } else if (username === "") {
+          alert("Please enter a username, then submit")
+        } else if (password === "") {
+          alert("Please enter a password, then submit")
+        } else {
+        }
+  
+      }
+  }
+  
+    
+    
+    document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
