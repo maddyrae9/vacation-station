@@ -19,13 +19,11 @@ GroceryStores.init(
       type: DataTypes.TEXT,
       allowNull: true,
     },
-    food_name: {
+    location: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    has_nuts: {
-      type: DataTypes.BOOLEAN,
-    },
+   
   },
   {
     sequelize,
