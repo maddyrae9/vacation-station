@@ -1,4 +1,5 @@
-CREATE DATABASE vacation_db (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    groceryStoreName VARCHAR (15)
-)
+DROP DATABASE IF EXIST vacation_db;
+
+CREATE DATABASE vacation_db;
+
+
