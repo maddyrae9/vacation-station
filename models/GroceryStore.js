@@ -11,20 +11,11 @@ GroceryStores.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    dish_name: {
+    groceryStore_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    guest_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-  
-  },
+
   {
     sequelize,
     freezeTableName: true,
