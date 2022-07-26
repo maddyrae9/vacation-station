@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class GroceryStores extends Model {}
+class Addresses extends Model {}
 
-GroceryStores.init(
+Addresses.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,21 +11,19 @@ GroceryStores.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    dish_name: {
+    address_one: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    address_twoss: {
       type: DataTypes.TEXT,
       allowNull: true,
     },
-    guest_name: {
+    city: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    has_nuts: {
-      type: DataTypes.BOOLEAN,
-    },
+   
   },
   {
     sequelize,
@@ -35,4 +33,4 @@ GroceryStores.init(
   }
 );
 
-module.exports = GroceryStores;
+module.exports = Addresses;

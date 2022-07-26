@@ -1,12 +1,22 @@
 const User = require("./User");
-const GroceryStores = require("./GroceryStores");
+const GroceryStores = require("./GroceryStore");
+const Addresses = require ("./Addresses");
+
 
 User.hasMany(GroceryStores, {
-  foreignKey: "gallery_id",
+  foreignKey: "store_id",
 });
 
 GroceryStores.belongsTo(User, {
-  foreignKey: "gallery_id",
+  foreignKey: "store_id",
 });
 
-module.exports = { User, GroceryStores };
+User.hasOne(Addresses, {
+  foreignKey: "address_id",
+})
+
+Addresses.belongsTo(User, {
+  foreignKey:"address_id",
+})
+
+module.exports = { User, GroceryStores, Addresses };
