@@ -2,6 +2,7 @@
 var loginButtonEl = document.getElementById("login-btn");
 var homePageEl = document.getElementById("home-page");
 var shoppingListArr = [];
+// var cartEl = document.getElementById("checkout-page");
 
 var paymentPageEl = document.getElementById("checkout-page");
 paymentPageEl.classList.add("hide");
@@ -31,3 +32,5 @@ function checkoutForm(event) {
   paymentPageEl.classList.remove("hide");
 }
 createAccountButtonEl.addEventListener("click", checkoutForm);
+
+// var isEdit = formEl.hasAttribute("data-task-id");
