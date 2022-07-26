@@ -15,7 +15,7 @@ GroceryStores.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-
+  }
   {
     sequelize,
     freezeTableName: true,
