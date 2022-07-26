@@ -15,7 +15,7 @@ Addresses.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    address_two: {
+    address_twoss: {
       type: DataTypes.TEXT,
       allowNull: true,
     },
