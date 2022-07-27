@@ -21,7 +21,7 @@ const sess = {
 
 app.use(session(sess));
 
- const helpers = require('./utils/helpers');
+ const helpers = require('./Utils/helpers');
 // const Connecttion = require('./mysql2/typing/mysql/lib/connection');
 
  const hbs = exphbs.create({ helpers });
