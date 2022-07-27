@@ -3,7 +3,6 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -23,7 +22,7 @@ const sess = {
 app.use(session(sess));
 
  const helpers = require('./utils/helpers');
-const Connection = require('mysql2/typings/mysql/lib/Connection');
+// const Connecttion = require('./mysql2/typing/mysql/lib/connection');
 
  const hbs = exphbs.create({ helpers });
 
@@ -34,8 +33,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(Connection.initialize());
-app.use(Connection.session());
+// app.use(connection.initialize());
+// app.use(connection.session());
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
