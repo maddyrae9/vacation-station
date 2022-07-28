@@ -21,7 +21,7 @@ async function loginFormHandler(event) {
   
           if (response.ok) {
               // go back to homepage after loggin in
-            document.location.replace('/');
+            document.location.replace('/dashboard');
           } else {
             // alert(response.statusText);
             alert("Username/password combination does not exist, please try again or sign up instead.");
@@ -37,7 +37,6 @@ async function loginFormHandler(event) {
           alert("Please enter a password, then submit")
         } else {
         }
-  
       }
   }
     document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
