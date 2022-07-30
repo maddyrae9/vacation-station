@@ -1,28 +1,46 @@
 {
-    "name": "vacation-station",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "test": "jest",
-        "seeds": "node seeds/index.js",
-        "start": "node server.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "bcrypt": "^5.0.1",
-        "connect-session-sequelize": "^6.1.1",
-        "cors": "^2.8.5",
-        "dotenv": "^8.2.0",
-        "express": "^4.17.1",
-        "express-handlebars": "^6.0.6",
-        "express-session": "^1.17.0",
-        "handlebars": "^4.7.3",
-        "mysql2": "^2.1.0",
-        "sequelize": "^5.21.5"
-    },
-    "devDependencies": {
-        "jest": "^28.1.3"
-    }
+  "name": "vacation-station",
+  "version": "1.0.0",
+  "description": "# USER STORY  AS A VACATIONER I want all my needs for food and rentals in one place, SO THAT I can optimize and be efficient with my vacation.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maddyrae9/vacation-station.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maddyrae9/vacation-station/issues"
+  },
+  "homepage": "https://github.com/maddyrae9/vacation-station#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-passport-logout": "^0.1.0",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "handlebars-paginate": "^0.1.0",
+    "mongodb": "^4.8.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "randomstring": "^1.2.2",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0",
+    "window-popup": "^1.1.0",
+    "xss": "^1.0.13",
+    "xss-filters": "^1.2.7"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "nodemon": "^2.0.19"
+  }
 }
