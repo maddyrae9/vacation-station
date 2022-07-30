@@ -13,7 +13,7 @@ function generateHashedPassword(password) {
 /* exporting controllers apis */
 module.exports = credentialsControllers = {
 
-    //------------------------ fetch a credential information by email id
+    // fetch a credential information by email id
     getCredentialById: (email) => {
         return credentials().then((credentialsCollection) => {
             // returning a found json document else returning null
@@ -26,7 +26,7 @@ module.exports = credentialsControllers = {
     },
 
 
-    //------------------------ compare the given credential
+    // compare the given credential
 	compareCredential: (email, password) => {
 		return credentials().then((credentialsCollection) => {
             // finding passed email id document
@@ -47,7 +47,7 @@ module.exports = credentialsControllers = {
         });
 	},
 
-    //------------------------ generate new credential (for forget password)
+    // generate new credential (for forget password)
     generateCredential: ((email) => {
         return credentials().then((credentialsCollection) => {
             
@@ -67,7 +67,7 @@ module.exports = credentialsControllers = {
         });
     }),
 
-    //------------------------ insert/create a new credential record
+    // insert/create a new credential record
     createNewCredential: (email, password) => {
         return credentials().then((credentialsCollection) => {
 
@@ -95,7 +95,7 @@ module.exports = credentialsControllers = {
     },
 
 
-    //------------------------ update a credential information
+    // update a credential information
     updateCredential: (email, password, savedPassword) => {
         return credentials().then((credentialsCollection) => {
             
@@ -126,7 +126,7 @@ module.exports = credentialsControllers = {
     },
 
 	
-    //------------------------ delete a credential record of specific email id
+    // delete a credential record of specific email id
     deleteCredential: (email) => {
         return credentials().then((credentialsCollection) => {
             // deleting a record
