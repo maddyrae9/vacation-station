@@ -2,7 +2,7 @@
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
-const hbs = require('express-handlebars');
+const exphbs = require('express-handlebars');
 const express = require('express');
 const handlebars = require('handlebars');
 //const handlebarsIntl = require('handlebars-intl');
@@ -38,8 +38,10 @@ app.use("/public", static);
 /* view or handlebars configuration */
 //handlebarsIntl.registerWith(handlebars);    // handlebars formatting
 handlebars.registerHelper('paginate', handlebarsPaginate);  // paging
-//app.engine('handlebars', exphbs({ defaultLayout:'main' }));
-app.set('view engine', 'handlebars');
+const hbs = exphbs.create({  });
+
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 /* routing configuration */
 const configRoutes = require("./routes");

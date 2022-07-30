@@ -9,7 +9,7 @@ const usersRoutes = require('./users');
 const mainRoutes = (app) => {
 
     /* home page routes */
-    app.use("/$/", homeRoutes);
+    app.use("/", homeRoutes);
 
     /* customized routes */
     app.use("/payment", paymentsRoutes);    // payments routes
