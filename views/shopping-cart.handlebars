@@ -1,0 +1,80 @@
+<div class="grid">
+  <div style="display: grid; max-width: 800px; margin: 0 auto; grid-template-columns:  2fr 4fr 2fr 1fr 1fr 1fr; grid-gap: 0.5em;">
+    <div></div>
+    <div>Name</div>
+    <div>Unit Price</div>
+    <div>Quantity</div>
+    <div>Total</div>
+    <div></div>
+  </div>
+
+    {{#if hasProducts}}
+  {{#each products}}
+  {{#if quantity}}
+  <div class="mb-3" style="display: grid; max-width: 800px; margin: 0 auto; grid-template-columns:  2fr 4fr 2fr 1fr 1fr 1fr; grid-gap: 0.5em; align-items:center">
+
+  <div class="flex w-100">
+    <img src="{{image}}" class="img-fluid" style="max-height: 80px;" alt="">
+  </div>
+  <p class="card-text mb-0">{{name}}</p>
+  <p class="mb-0">${{price}}</p>
+  <p class="mb-0">{{quantity}}</p>
+  <p class="mb-0">${{multiply price quantity}}</p>
+  <form method="POST" action="/add-cart?quantity=0&user={{../user.id}}&product={{id}}&from=cart">
+      <button type="submit" class="btn btn-danger p-0 d-flex px-2 align-items-center" style="max-height: 28px;">x</button>
+  </form>
+  </div>
+  {{/if}}
+
+    {{/each}}
+    {{else}}
+  <div class="p-5 text-center w-100">
+    No items in cart
+  </div>
+  {{/if}}
+</div>
+
+{{!-- <div class="row" id="checkout-page">
+  <section class="col" id="payment-form">
+    <form class="row g-3">
+      <h2>Payment</h2>
+      <label for="card-name">Full Name</label>
+      <input
+        type="text"
+        id="card-name"
+        name="card-name"
+        placeholder="Name On Card"
+      />
+      <label for="card-num">Credit Card Number</label>
+      <input
+        type="text"
+        id="card-num"
+        name="card-num"
+        placeholder="Credit Card Number"
+      />
+      <label for="card-cvv">CVV</label>
+      <input type="text" id="card-cvv" name="card-cvv" placeholder="CVV" />
+      <label for="exp-date">Expiration Date</label>
+      <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" />
+      <label for="bill-zip">Billing Zip Code</label>
+      <input
+        type="text"
+        id="bill-zip"
+        name="bill-zip"
+        placeholder="Zip/Postal Code"
+      />
+    </form>
+  </section>
+  <section class="col" id="cart-form">
+    <form class="row g-3">
+      <h3>Shopping Cart</h3>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+   <div>
+      <button type="sumbit">login</button>
+         </div>
+    </form>
+  </section>
+</div> --}}
