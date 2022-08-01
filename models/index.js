@@ -1,12 +1,19 @@
-const User = require("./User");
-const GroceryStores = require("./GroceryStores");
+const User = require("./user");
+// const Product = require("./product");
+const Cart = require("./cart");
 
-User.hasMany(GroceryStores, {
-  foreignKey: "gallery_id",
-});
+User.hasMany(Cart);
+Cart.belongsTo(User);
+// Product.belongsToMany(User, { through: Cart });
 
-GroceryStores.belongsTo(User, {
-  foreignKey: "gallery_id",
-});
+(async () => {
+  try {
+    await User.sync();
+    // await Product.sync();
+    await Cart.sync();
+  } catch (error) {
+    console.error("?", error);
+  }
+})();
 
-module.exports = { User, GroceryStores };
+module.exports = { User, Cart };

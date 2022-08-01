@@ -1,27 +1,39 @@
       <!-- Signup -->
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h2>Sign Up Form</h2>
-          <form class="signup">
-            <div class="form-group">
+<div class="row mx-auto my-5" style="max-width: 500px;">
+  <div class="col-12">
+          <h2>Sign Up</h2>
+          <form id="signup">
+            <div class="form-group mb-3">
+              <label for="exampleInputUsername">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username-input"
+                name="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="form-group mb-3">
               <label for="exampleInputEmail1">Email address</label>
               <input
                 type="email"
                 class="form-control"
                 id="email-input"
+                name="email"
                 placeholder="Email"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
               <label for="exampleInputPassword1">Password</label>
               <input
                 type="password"
                 class="form-control"
                 id="password-input"
+                name="password"
                 placeholder="Password"
               />
             </div>
-            <div
+            {{!-- <div
               style="display: none;"
               id="alert"
               class="alert alert-danger"
@@ -32,11 +44,33 @@
                 aria-hidden="true"
               ></span>
               <span class="sr-only">Error:</span> <span class="msg"></span>
-            </div>
-            <button type="submit" class="btn btn-default">Sign Up</button>
+            </div> --}}
+            
+            <button type="submit" onclick="register()" class="btn btn-primary">Sign Up</button>
           </form>
           <br />
           <p>Or log in <a href="/login">here</a></p>
         </div>
       </div>
-      <!-- /Signup -->
+      <script>
+        function register() {
+          document.getElementById("signup").onsubmit = function(e) {
+            e.preventDefault();
+          };
+          const xhr = new XMLHttpRequest();
+          xhr.open("POST", "/signup");
+          xhr.setRequestHeader("Content-Type", "application/json");
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              window.location.href = "/login";
+            }
+          };
+          xhr.send(
+            JSON.stringify({
+              username: document.getElementById("username-input").value,
+              email: document.getElementById("email-input").value,
+              password: document.getElementById("password-input").value
+            })
+          );
+        }
+      </script>
