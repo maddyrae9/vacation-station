@@ -48,8 +48,11 @@ vacation-station-wireframe.png
 # Who is Doing What
 * Madison: HTML. CSS
 * Alina: HTML. CSS, JS
-* Milfred: HTML, CSS, JS, Willing
-to try
+* Milfred: HTML, CSS, JS, backend
 * James: HTML, GitHub, Willing
 to try
 * Jean: HTML, CSS, JS, Backend
+
+# Heroku
+https://vacationstation.herokuapp.com/
+Local host: http://localhost:3000
