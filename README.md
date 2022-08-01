@@ -45,6 +45,18 @@ vacation-station-wireframe.png
 
 * Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
+# Future Development
+* More grocery store options
+* Edit cart to remove or add product 
+* Nationwide instead of local
+* Implementing car rentals
+* Implementing water rentals (ie boats, jetskis, etc.)
+* Uber working with us to deliver these products. 
+* Bundle and Save
+* Have our app available on airbnbs website to assist with booking needs. 
+* Adding payment section
+
+
 # Who is Doing What
 * Madison: HTML. CSS
 * Alina: HTML. CSS, JS
