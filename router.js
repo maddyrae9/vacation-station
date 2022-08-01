@@ -1,4 +1,4 @@
-const homeRoutes = require('./controllers/homeRoutes.js');
+const homeRoutes = require('./routes');
 // const sequelize = require('../config/connection');
 
 function useRoutes(app) {

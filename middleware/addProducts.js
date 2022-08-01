@@ -1,4 +1,4 @@
-const { default: axios } = require("axios");
+//const { default: axios } = require("axios");
 
 module.exports = async function (req, next) {
   const productsNames = [
