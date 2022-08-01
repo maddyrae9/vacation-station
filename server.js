@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express");
 //const session = require("express-session");
-//const exphbs = require("express-handlebars");
+const expreshbs = require('express-handlebars');
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -22,11 +22,12 @@ const sess = {
 
 const helpers = require("./Utils/helpers");
 const addProducts = require("./middleware/addProducts");
+const exphbs = require("exphbs");
 
 //const hbs = exphbs.engine({ helpers });
 
-app.engine("handlebars");
-app.set("view engine", "handlebars");
+//app.engine('.hbs', exphbs.engine({ extname:'.hbs'}));
+app.set("view engine", "hbs");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
