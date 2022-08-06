@@ -17,7 +17,7 @@ Future Development: Cart page, Review page
 vacation-station-wireframe.png 
 
 # Screenshot
-![ss](images/vacation-station.png)
+![ss](/assets/images/vacation-station%20.png)
 # Customer Requirements
 Use Node.js and Express.js to create a RESTful API.
 
