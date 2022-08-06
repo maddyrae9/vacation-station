@@ -5,66 +5,53 @@
  
  # Description
 
-* This app allows vacation users to get all there food and rentals in one place.
+This app allows vacation users to get all there food and rentals in one place.
 
-* Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
+Vacation-station will have a home page with catagories for Groceries, Rental, Delivery
 
-* It wil have a Registration page, Login in page, Home page, complete form page, Tracking page, 
+It wil have a Registration page, Login in page, Home page, complete form page, Tracking page, 
 
-* Future Development: Cart page, Review page
+Future Development: Cart page, Review page
 
 # WireFrame
 vacation-station-wireframe.png 
 
+# Screenshot
+![ss](images/vacation-station.png)
 # Customer Requirements
-* Use Node.js and Express.js to create a RESTful API.
+Use Node.js and Express.js to create a RESTful API.
 
-* Use Handlebars.js as the templating engine.
+Use Handlebars.js as the templating engine.
 
-* Use MySQL and the Sequelize ORM for the database.
+Use MySQL and the Sequelize ORM for the database.
 
-* Have both GET and POST routes for retrieving and adding new data.
+Have both GET and POST routes for retrieving and adding new data.
 
-* Be deployed using Heroku (with data).
+Be deployed using Heroku (with data).
 
-* Use at least one new library, package, or technology that we haven’t discussed.
+Use at least one new library, package, or technology that we haven’t discussed.
 
-* Have a polished UI.
+Have a polished UI.
 
-* Be responsive.
+Be responsive.
 
-* Be interactive (i.e., accept and respond to user input).
+Be interactive (i.e., accept and respond to user input).
 
-* Have a folder structure that meets the MVC paradigm.
+*ave a folder structure that meets the MVC paradigm.
 
-* Include authentication (express-session and cookies).
+Include authentication (express-session and cookies).
 
-* Protect API keys and sensitive information with environment variables.
+Protect API keys and sensitive information with environment variables.
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+*Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-# Future Development
-* More grocery store options
-* Edit cart to remove or add product 
-* Nationwide instead of local
-* Implementing car rentals
-* Implementing water rentals (ie boats, jetskis, etc.)
-* Uber working with us to deliver these products. 
-* Bundle and Save
-* Have our app available on airbnbs website to assist with booking needs. 
-* Adding payment section
-
+*Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 # Who is Doing What
-* Madison: HTML. CSS
-* Alina: HTML. CSS, JS
-* Milfred: HTML, CSS, JS, backend
-* James: HTML, GitHub, Willing
+Madison: HTML. CSS
+Alina: HTML. CSS, JS
+Milfred: HTML, CSS, JS, Willing
 to try
-* Jean: HTML, CSS, JS, Backend
-
-# Heroku
-https://vacationstation.herokuapp.com/
-Local host: http://localhost:3000
+James: HTML, GitHub, Willing
+to try
+Jean: HTML, CSS, JS, Backend
